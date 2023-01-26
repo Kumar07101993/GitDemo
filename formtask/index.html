@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <article>
+<form action="" method="GET">
+                <div>
+                <h1>REGISTER  <span style="color: red;font-size: 20px;">*</span></h1>
+            </div>
+            <div>
+                <label for="uname">Username<span style="color: red; font-size: 20px;">*</span></label>
+                <input type="text" id="uname" placeholder="Enter username" pattern="[A,Z], [a-z], {6,}" title="Minimum 6 characters" required>
+            </div>
+            <div>
+                <label for="pword">Password<span style="color: red; font-size: 20px;">*</span></label>
+                <input type="password" id="pword" placeholder="Enter password" pattern="(?=.*[a-z])(?=.*[0-9]).{10,}" title="Minimum 10 characters" required> 
+            </div>
+            <div>   
+                <label for="mail">Email<span style="color: red; font-size: 20px;">*</span></label>
+                <input type="mail" id="mail" placeholder="Enter email" pattern=" [a-z], [0-9], @, .">
+            </div>
+            <div class="radio">
+                <span>
+                    <input type="radio" id="male" value="gender">
+                     <label for="male" class="man">Male</label>
+                </span>
+                <span>
+                    <input type="radio" id="female" value="gender">
+                     <label for="female" class="women">Female</label>
+                </span>
+            </div>
+            <div>
+                <label for="dob">Date of Birth<span style="color: red; font-size: 20px;">*</span></label>
+                <input type="date" id="dob" placeholder="Ener date of birth">
+            </div>
+
+            <div>
+                <label for="phno">Contact<span style="color: red; font-size: 20px;">*</span></label>
+                <input type="number" id="phno" placeholder="Enter contact" pattern="[0-9]" required>
+            </div>
+
+            <input type="radio" id="checkbox" required>
+            <label for="checkbox" class="checkbox">I hereby accept all terms and conditions<span style="color: red; font-size: 20px;">*</span></label>
+            
+            <div class="Login">
+            <button>SignUp</button>
+            </div>
+</form>
+        </article>
+    </section>
+</body>
+</html>
